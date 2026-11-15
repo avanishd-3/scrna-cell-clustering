@@ -4,7 +4,7 @@ The big-picture summary is in README.md. This file keeps every step, threshold a
 
 Clustering of all cells in the 22 gene-expression 10x libraries of GEO GSE337533. Published
 cell-type annotations and the associated publication/preprint were **not** used; annotations
-below are my own, from marker genes plus an orthogonal BCR check.
+below are from marker genes plus an orthogonal BCR check.
 
 ## Main outputs
 
@@ -141,5 +141,5 @@ too large for GitHub (21 of the 22 matrices exceed the 100 MB file limit) and ar
 available from GEO. The commands recreate the intermediate files (`data/libs`,
 `data/qc`, `data/global`, `data/sub`, ~9 GB), which can be deleted once `results/` is written.
 `results/sub/subcluster_resolution_sweep.csv` and `results/sub/refine_log.csv` record the
-resolution choice and merges for each compartment. Runtime is about 2-3 h on
+resolution choice and merges for each compartment. Runtime is about 1 hr on
 an M4 Pro with 24 GB, with peak RAM around 10 GB.
