@@ -1,0 +1,66 @@
+cluster,n,none,H only,L only,H+L,class_switched,annotation
+B_lineage_0,32419,0.318,0.051,0.064,0.567,0.01,Mature naive B
+B_lineage_1,21422,0.239,0.022,0.154,0.585,0.143,Mature B (memory-like)
+B_lineage_2,19200,0.364,0.332,0.025,0.278,0.001,Small pre-B / immature B
+B_lineage_3,19147,0.262,0.03,0.087,0.621,0.009,Mature/transitional B (HLA-II/CD83-high)
+B_lineage_4,8693,0.245,0.022,0.136,0.598,0.04,Activated B (immediate-early-high)
+B_lineage_5,8533,0.279,0.592,0.001,0.128,0.001,Cycling large pre-B
+B_lineage_6,8436,0.941,0.021,0.014,0.025,0.011,Pro-B (non-cycling)
+B_lineage_7,5463,0.936,0.013,0.014,0.036,0.009,Early pro-B (CD34+ DNTT+)
+B_lineage_8,5080,0.402,0.474,0.002,0.122,0.005,Late large pre-B (exiting cycle)
+B_lineage_9,3060,0.203,0.023,0.121,0.654,0.324,Mature B (IEG-high)
+Erythroid_0,3996,0.988,0.001,0.006,0.006,0.005,Erythroblasts (cycling)
+Erythroid_1,3470,0.986,0.003,0.005,0.006,0.005,Early erythroid progenitors
+Erythroid_2,3197,0.973,0.003,0.006,0.018,0.006,MEP-like progenitors
+Erythroid_3,1201,0.963,0.001,0.008,0.028,0.009,Basophil/eosinophil/mast progenitors
+Erythroid_4,716,0.948,0.006,0.008,0.038,0.021,Doublet-like (erythroid + T)
+Erythroid_5,670,0.979,0.0,0.004,0.016,0.01,Late (orthochromatic) erythroblasts
+Erythroid_6,367,0.542,0.063,0.063,0.332,0.052,Doublet-like (erythroid + B)
+Erythroid_7,251,0.96,0.004,0.004,0.032,0.012,Erythroid progenitors (low-UMI)
+HSPC_MyeloidProg_0,7880,0.982,0.001,0.007,0.01,0.006,HSPC (HSC/MPP)
+HSPC_MyeloidProg_1,7008,0.991,0.001,0.004,0.004,0.003,Monocyte progenitor / promonocyte
+HSPC_MyeloidProg_2,5881,0.987,0.001,0.005,0.006,0.005,GMP / promyelocyte
+HSPC_MyeloidProg_3,3931,0.983,0.001,0.007,0.009,0.004,Cycling myelo-monocytic progenitor
+HSPC_MyeloidProg_4,3110,0.969,0.004,0.009,0.018,0.008,Conventional DC (cDC2-like)
+HSPC_MyeloidProg_5,1997,0.971,0.002,0.012,0.016,0.007,Cycling progenitors
+HSPC_MyeloidProg_6,1655,0.98,0.002,0.005,0.013,0.003,Early lymphoid progenitor (LMPP/CLP-like)
+HSPC_MyeloidProg_7,1578,0.729,0.026,0.049,0.196,0.059,Progenitors with B-cell ambient/doublet signal
+HSPC_MyeloidProg_8,696,0.973,0.001,0.01,0.016,0.007,Doublet-like (progenitor + T)
+Monocyte_0,28175,0.984,0.0,0.008,0.008,0.007,Classical monocytes
+Monocyte_1,1683,0.81,0.007,0.06,0.123,0.029,Non-classical / intermediate monocytes
+Monocyte_2,676,0.973,0.003,0.007,0.016,0.015,Doublet-like (monocyte + T)
+Monocyte_3,485,0.981,0.0,0.008,0.01,0.004,Megakaryocytes / platelet-monocyte complexes
+Neutrophil_0,1075,0.994,0.0,0.005,0.001,0.001,Mature neutrophils
+Neutrophil_1,932,0.996,0.0,0.002,0.002,0.001,Metamyelocytes / band neutrophils
+Neutrophil_2,467,0.996,0.0,0.004,0.0,0.0,Myelocytes
+Neutrophil_3,297,0.99,0.0,0.007,0.003,0.003,Promyelocytes / myelocytes (cycling)
+Neutrophil_4,190,0.974,0.0,0.011,0.016,0.016,Doublet-like (neutrophil + T)
+Neutrophil_5,100,0.45,0.03,0.15,0.37,0.07,Doublet-like (neutrophil + HLA-II+ cell)
+Plasma_0,1036,0.017,0.011,0.019,0.953,0.868,Plasma cells (PRDM1-high)
+Plasma_1,1016,0.027,0.005,0.017,0.952,0.818,Plasma cells (secretory)
+Plasma_10,56,0.036,0.0,0.0,0.964,0.964,Doublet-like (plasma + myeloid)
+Plasma_2,403,0.114,0.015,0.052,0.819,0.486,Plasmablast-like / B-plasma intermediate
+Plasma_3,376,0.564,0.003,0.013,0.42,0.378,Doublet-like (plasma + T)
+Plasma_4,181,0.961,0.0,0.022,0.017,0.017,Macrophages
+Plasma_5,160,0.0,0.0,0.025,0.975,0.856,Plasma cells (AQP3/ISG)
+Plasma_6,138,0.087,0.007,0.036,0.87,0.797,Doublet-like (plasma + monocyte)
+Plasma_7,101,0.901,0.0,0.03,0.069,0.059,MAFB+ monocyte-derived macrophages
+Plasma_8,80,0.8,0.012,0.0,0.188,0.138,Stromal cells (CXCL12+)
+Plasma_9,65,0.015,0.0,0.031,0.954,0.862,Doublet-like (plasma + pro-B)
+T_NK_0,33036,0.988,0.001,0.005,0.007,0.006,CD4 T (naive/central memory)
+T_NK_1,32113,0.987,0.001,0.006,0.007,0.006,CD8 T naive
+T_NK_2,22636,0.99,0.001,0.004,0.005,0.004,T cells (stress/IEG-high)
+T_NK_3,12928,0.972,0.002,0.009,0.018,0.009,CD8 T effector memory
+T_NK_4,9988,0.988,0.001,0.004,0.007,0.006,NK cells
+T_NK_5,8302,0.983,0.001,0.005,0.01,0.007,KLRB1+ T (MAIT-like)
+T_NK_6,1414,0.982,0.002,0.002,0.013,0.008,Activated/memory T
+pDC_0,460,0.983,0.0,0.011,0.007,0.007,pDC
+pDC_1,440,0.989,0.0,0.005,0.007,0.007,pDC (biosynthetic/ER-high)
+pDC_2,437,0.979,0.002,0.007,0.011,0.011,pDC (HLA-DQ/NR4A3-high)
+pDC_3,333,0.991,0.0,0.003,0.006,0.006,pre-pDC
+pDC_4,134,0.963,0.007,0.007,0.022,0.015,pDC (low-UMI)
+pDC_5,124,0.96,0.0,0.016,0.024,0.008,Cycling pDC / progenitor
+pDC_6,88,0.977,0.0,0.011,0.011,0.0,Doublet-like (pDC + T)
+pDC_7,86,0.965,0.012,0.0,0.023,0.023,Doublet-like (pDC + monocyte)
+pDC_8,47,0.255,0.085,0.043,0.617,0.064,Doublet-like (pDC + B)
+pDC_9,34,0.941,0.0,0.029,0.029,0.029,Activated pDC

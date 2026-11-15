@@ -1,0 +1,9 @@
+{"_key": "leiden_0.2",
+ "B_lineage": ["7", "8", "9", "10"],
+ "Plasma": ["11"],
+ "T_NK": ["0", "3"],
+ "HSPC_MyeloidProg": ["1"],
+ "Monocyte": ["5"],
+ "pDC": ["2"],
+ "Neutrophil": ["4"],
+ "Erythroid": ["6"]}

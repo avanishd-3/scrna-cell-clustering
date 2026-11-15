@@ -1,0 +1,66 @@
+cluster,annotation,key_markers
+B_lineage_0,Mature naive B,MS4A1 FCER2 IGHD IL4R LINC00926
+B_lineage_1,Mature B (memory-like),MS4A1 LTB BANK1 AHNAK; low CD27/TNFRSF13B
+B_lineage_2,Small pre-B / immature B,IGHM RAG1 RAG2 MME CD24 IRF4 SOX4; MS4A1-low
+B_lineage_3,Mature/transitional B (HLA-II/CD83-high),MS4A1 CD83 HLA-DQB1 FCER2
+B_lineage_4,Activated B (immediate-early-high),CD83 NR4A2 ZFP36 KDM6B
+B_lineage_5,Cycling large pre-B,MKI67 TOP2A HIST1H4C IGLL1 VPREB1 IGHM
+B_lineage_6,Pro-B (non-cycling),DNTT RAG1 VPREB1 IGLL1 MME NPY AKAP12
+B_lineage_7,Early pro-B (CD34+ DNTT+),CD34 DNTT IGLL1 VPREB1 EBF1 STMN1
+B_lineage_8,Late large pre-B (exiting cycle),IGLL1 VPREB1 TCL1A CD24 IGHM
+B_lineage_9,Mature B (IEG-high),MS4A1 IRF8 ZFP36 NR4A2 JUNB
+T_NK_0,CD4 T (naive/central memory),CD3E LTB IL7R
+T_NK_1,CD8 T naive,CD8B NELL2 LINC02446
+T_NK_2,T cells (stress/IEG-high),FOS ZFP36 JUNB KLF6
+T_NK_3,CD8 T effector memory,CCL5 NKG7 CST7 CD8A
+T_NK_4,NK cells,GNLY NKG7 GZMB FGFBP2 TYROBP
+T_NK_5,KLRB1+ T (MAIT-like),KLRB1 SLC7A5 AQP3
+T_NK_6,Activated/memory T,IL32 CD52 S100A10
+HSPC_MyeloidProg_0,HSPC (HSC/MPP),CD34 SPINK2 HOPX EGFL7
+HSPC_MyeloidProg_1,Monocyte progenitor / promonocyte,LYZ S100A8 S100A9 RETN
+HSPC_MyeloidProg_2,GMP / promyelocyte,MPO ELANE AZU1 PRTN3 CTSG
+HSPC_MyeloidProg_3,Cycling myelo-monocytic progenitor,LYZ S100A9 HIST1H4C
+HSPC_MyeloidProg_4,Conventional DC (cDC2-like),CST3 HLA-DRA HLA-DQA1 CD74
+HSPC_MyeloidProg_5,Cycling progenitors,TYMS PCLAF STMN1 IGLL1
+HSPC_MyeloidProg_6,Early lymphoid progenitor (LMPP/CLP-like),SOX4 ADA SPNS3 ITM2C IGHM
+HSPC_MyeloidProg_7,Progenitors with B-cell ambient/doublet signal,CD79A MS4A1 IGHM; 73% no BCR contig; 67% from B-enriched libs
+HSPC_MyeloidProg_8,Doublet-like (progenitor + T),CD3E BCL11B + progenitor genes
+Monocyte_0,Classical monocytes,LYZ S100A9 FCN1 VCAN
+Monocyte_1,Non-classical / intermediate monocytes,FCGR3A HLA-DPA1 IFITM3
+Monocyte_2,Doublet-like (monocyte + T),CD3E BCL11B + LYZ
+Monocyte_3,Megakaryocytes / platelet-monocyte complexes,PPBP PF4 NRGN TUBB1
+pDC_0,pDC,GZMB IRF8 PTCRA CD4
+pDC_1,pDC (biosynthetic/ER-high),PPIB SSR2 DDOST
+pDC_2,pDC (HLA-DQ/NR4A3-high),NR4A3 HLA-DQA2 SERPINF1
+pDC_3,pre-pDC,SOX4 MZB1
+pDC_4,pDC (low-UMI),SERPINF1
+pDC_5,Cycling pDC / progenitor,STMN1 TUBA1B
+pDC_6,Doublet-like (pDC + T),CD3E CD7
+pDC_7,Doublet-like (pDC + monocyte),LYZ S100A9
+pDC_8,Doublet-like (pDC + B),CD79A MS4A1
+pDC_9,Activated pDC,CD83 NFKBIA BHLHE40
+Neutrophil_0,Mature neutrophils,MMP9 S100A12 G0S2
+Neutrophil_1,Metamyelocytes / band neutrophils,CAMP LTF LCN2 RETN
+Neutrophil_2,Myelocytes,LTF CAMP CRISP3 MMP8
+Neutrophil_3,Promyelocytes / myelocytes (cycling),DEFA3 HIST1H4C SLPI
+Neutrophil_4,Doublet-like (neutrophil + T),EEF1A1 BTG1 low-granule
+Neutrophil_5,Doublet-like (neutrophil + HLA-II+ cell),CD74 HLA-DRA
+Erythroid_0,Erythroblasts (cycling),AHSP HBM CA2 MKI67
+Erythroid_1,Early erythroid progenitors,KCNH2 HSPD1 FAM178B
+Erythroid_2,MEP-like progenitors,ARHGDIB PDLIM1 GSTP1
+Erythroid_3,Basophil/eosinophil/mast progenitors,HDC PRG2 CLC CPA3
+Erythroid_4,Doublet-like (erythroid + T),CD3E LTB
+Erythroid_5,Late (orthochromatic) erythroblasts,HBB ALAS2 SLC4A1 SNCA
+Erythroid_6,Doublet-like (erythroid + B),CD79A IGHM
+Erythroid_7,Erythroid progenitors (low-UMI),MIF GAPDH
+Plasma_0,Plasma cells (PRDM1-high),PRDM1 TRIB1 HERPUD1 MZB1
+Plasma_1,Plasma cells (secretory),SDC1 SSR4 DERL3 FKBP11
+Plasma_2,Plasmablast-like / B-plasma intermediate,CD74 HLA-DRA CD83
+Plasma_3,Doublet-like (plasma + T),CD3E CD7
+Plasma_4,Macrophages,C1QA C1QB APOE
+Plasma_5,Plasma cells (AQP3/ISG),AQP3 ZBP1 TXNDC5
+Plasma_6,Doublet-like (plasma + monocyte),LYZ S100A9
+Plasma_7,MAFB+ monocyte-derived macrophages,MAFB HMOX1 TNFAIP2
+Plasma_8,Stromal cells (CXCL12+),CXCL12 IGFBP7 VIM
+Plasma_9,Doublet-like (plasma + pro-B),DNTT VPREB1
+Plasma_10,Doublet-like (plasma + myeloid),MPO ELANE + switched BCR (96% H+L)
