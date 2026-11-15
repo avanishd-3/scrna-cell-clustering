@@ -38,9 +38,12 @@ one of the two CSVs.
      (0-1,000 calls per library). Calibration against hash doublets: 28% of them have score > 0.25
      vs 3.5% of hash singlets (most cross-donor doublets are same-cell-type and invisible to
      Scrublet) (`results/qc/doublet_calibration.txt`).
-3. **02c_lineage_doublets.py: heterotypic doublet filter.** The first global clustering
-   (`results/global_v1`) showed a B+granulocyte co-expressing population coming almost entirely
-   from library Bcell_2_2. I flag cells where two mutually exclusive lineage programs
+3. **02c_lineage_doublets.py: heterotypic doublet filter.** This step was added after a first
+   global clustering run without it. That run showed a population co-expressing B-cell genes
+   (CD79A/B, VPREB1, IGHM, MS4A1) and granulocyte genes (MPO, ELANE, AZU1, LYZ), coming almost
+   entirely from library Bcell_2_2 (about 52% of its cells in one cluster, vs ~0% for other
+   libraries). Scrublet had not flagged these cells. The first run was then discarded and the
+   global clustering re-run on the filtered data. I flag cells where two mutually exclusive lineage programs
    (B / granulocytic-myeloid / erythroid / T-NK, each the mean of 6-8 genes) both exceed 1.0
    log-norm. This removed 5,317 cells: 9.7% of Bcell_2_2 and 0.1-2% of the other libraries.
    IGLL1/CD24 are excluded from the B score because myeloid progenitors and neutrophils express them.
@@ -124,9 +127,16 @@ pixi run python -I scripts/03_global.py data/qc/merged_qc_ld.h5ad data/global 30
 pixi run python -I scripts/04_evaluate.py data/global/global.h5ad leiden_0.2 results/global
 pixi run python -I scripts/05_subcluster.py data/global/global.h5ad data/qc/merged_qc_ld.h5ad results/compartments.json data/sub
 pixi run python -I scripts/05b_refine.py data/sub data/sub/subcluster_resolution_sweep.csv
+cp data/sub/subcluster_resolution_sweep.csv data/sub/refine_log.csv results/sub/
+for c in B_lineage T_NK HSPC_MyeloidProg Monocyte Neutrophil Erythroid Plasma pDC; do
+  pixi run python -I scripts/04_evaluate.py data/sub/$c.h5ad sub results/sub/$c; done
 pixi run python -I scripts/06_finalize.py data/global/global.h5ad data/sub/subcluster_labels.csv results/cluster_annotations.csv data/qc results/qc/lineage_doublet_calls.csv.gz results
 pixi run python -I scripts/07_vdj_validation.py data/vdj results/cell_clusters.csv results/vdj_validation_by_cluster.csv
 ```
 Raw data: GEO GSE337533 supplementary `*_{barcodes,features,matrix}` files → `data/raw/`; BCR
-`*_filtered_contig_annotations.csv.gz` (GSM9857521-542) → `data/vdj/`. Runtime is about 2-3 h on
+`*_filtered_contig_annotations.csv.gz` (GSM9857521-542) → `data/vdj/`. Only these two input
+folders are kept in the repository. The commands recreate the intermediate files (`data/libs`,
+`data/qc`, `data/global`, `data/sub`, ~9 GB), which can be deleted once `results/` is written.
+`results/sub/subcluster_resolution_sweep.csv` and `results/sub/refine_log.csv` record the
+resolution choice and merges for each compartment. Runtime is about 2-3 h on
 an M4 Pro with 24 GB, with peak RAM around 10 GB.
