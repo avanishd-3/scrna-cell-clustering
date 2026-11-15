@@ -118,6 +118,7 @@ one of the two CSVs.
 
 ## Reproduce
 ```
+bash scripts/00_download.sh        # GEO inputs -> data/raw, data/vdj (skips files already present)
 pixi install
 pixi run python -I scripts/01_load.py data/raw data/libs
 pixi run python -I scripts/01b_qc_loading.py data/raw data/libs results/qc
@@ -134,8 +135,10 @@ pixi run python -I scripts/06_finalize.py data/global/global.h5ad data/sub/subcl
 pixi run python -I scripts/07_vdj_validation.py data/vdj results/cell_clusters.csv results/vdj_validation_by_cluster.csv
 ```
 Raw data: GEO GSE337533 supplementary `*_{barcodes,features,matrix}` files → `data/raw/`; BCR
-`*_filtered_contig_annotations.csv.gz` (GSM9857521-542) → `data/vdj/`. Only these two input
-folders are kept in the repository. The commands recreate the intermediate files (`data/libs`,
+`*_filtered_contig_annotations.csv.gz` (GSM9857521-542) → `data/vdj/`. `scripts/00_download.sh`
+fetches both and checks gzip integrity. The whole `data/` directory is git-ignored: the inputs are
+too large for GitHub (21 of the 22 matrices exceed the 100 MB file limit) and are permanently
+available from GEO. The commands recreate the intermediate files (`data/libs`,
 `data/qc`, `data/global`, `data/sub`, ~9 GB), which can be deleted once `results/` is written.
 `results/sub/subcluster_resolution_sweep.csv` and `results/sub/refine_log.csv` record the
 resolution choice and merges for each compartment. Runtime is about 2-3 h on

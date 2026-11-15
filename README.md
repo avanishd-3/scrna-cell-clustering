@@ -81,6 +81,12 @@ In addition, no single run dominates any main cluster (≤18%). Neutrophils are 
 
 ## Reproduce
 
-Uses [pixi](https://pixi.sh) for packages. Run the scripts in `scripts/` in order (01 → 07). The
-exact commands are in [METHODS.md](METHODS.md#reproduce). It takes about 2-3 hours on an M4 Pro
-with 24 GB RAM.
+The input data (~3.2 GB) is not stored in this repository. It is downloaded from GEO into `data/`:
+
+```
+bash scripts/00_download.sh
+```
+
+Then install packages with [pixi](https://pixi.sh) (`pixi install`) and run the scripts in
+`scripts/` in order (01 → 07). The exact commands are in [METHODS.md](METHODS.md#reproduce). It
+takes about 2-3 hours on an M4 Pro with 24 GB RAM.

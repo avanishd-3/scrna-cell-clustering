@@ -10,3 +10,6 @@ __pycache__/
 
 # Mac
 .DS_Store
+
+# Input data (download with scripts/00_download.sh) and pipeline intermediates
+data/
