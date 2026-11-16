@@ -33,4 +33,4 @@ the pipeline.
 | numba | 0.68.1 | JIT compilation underlying umap-learn and pynndescent |
 | igraph (C library) | 1.0.1 | Compiled graph library behind python-igraph; runs the Leiden algorithm |
 | h5py | 3.16.0 | HDF5 I/O behind anndata's `.h5ad` files |
-| seaborn | Sscanpy depends on it |
+| seaborn | 0.13.2 |   Scanpy depends on it
